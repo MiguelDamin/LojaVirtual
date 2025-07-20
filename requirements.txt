@@ -1,0 +1,7 @@
+pyfiglet
+emoji
+rich
+tabulate
+colorama
+mysql-connector-python
+
