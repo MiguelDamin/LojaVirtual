@@ -126,19 +126,19 @@ ou
 
 1. Abra o DBeaver e conecte no MySQL
 
-        Abra o DBeaver.
+   Abra o DBeaver.
 
-        Na lista de conexões, clique duas vezes na sua conexão MySQL (ex: localhost, root).
+   Na lista de conexões, clique duas vezes na sua conexão MySQL (ex: localhost, root).
 
 2. Crie o banco de dados (se necessário)
 
-        Se o arquivo já cria o banco, pule esta etapa.
+   Se o arquivo já cria o banco, pule esta etapa.
 
-        Caso contrário:
+   Caso contrário:
 
-            Clique com o botão direito na conexão MySQL → SQL Editor > New SQL Script
+   Clique com o botão direito na conexão MySQL → SQL Editor > New SQL Script
 
-            Digite e execute:
+   Digite e execute:
 
         CREATE DATABASE lojavirtual;
         USE lojavirtual;
