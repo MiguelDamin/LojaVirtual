@@ -9,7 +9,7 @@ Este projeto é um simulador de loja virtual que roda no terminal (Prompt de Com
 * Visualizar os produtos disponíveis
 * Adicionar produtos ao carrinho
 * Fazer cadastro de clientes (se não estiver cadastrado)
-* Simular pagamento(Sem de fato pagara nada, apenas para deixar o código completo)
+* Simular pagamento (sem de fato pagar nada, apenas para deixar o código completo)
 * Finalizar a compra
 
 O sistema conecta a um banco de dados MySQL para armazenar produtos, clientes e registrar as vendas.
