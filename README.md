@@ -9,7 +9,7 @@ Este projeto é um simulador de loja virtual que roda no terminal (Prompt de Com
 * Visualizar os produtos disponíveis
 * Adicionar produtos ao carrinho
 * Fazer cadastro de clientes (se não estiver cadastrado)
-* Simular pagamento
+* Simular pagamento(Sem de fato pagara nada, apenas para deixar o código completo)
 * Finalizar a compra
 
 O sistema conecta a um banco de dados MySQL para armazenar produtos, clientes e registrar as vendas.
@@ -62,6 +62,54 @@ Você precisa criar um banco MySQL chamado **lojavirtual** com essas tabelas:
 ---
 
 ## Como criar e configurar o banco no DBeaver
+
+## Você pode usar o arquivo lojavirtual.sql para importar o banco de dados
+
+## Siga estes passos para importar no MySQL usando o DBeaver:
+
+1. Abra o DBeaver e conecte no MySQL
+
+   Abra o DBeaver.
+
+   Na lista de conexões, clique duas vezes na sua conexão MySQL (ex: localhost, root).
+
+2. Crie o banco de dados (se necessário)
+
+   Se o arquivo já cria o banco, pule esta etapa.
+
+   Caso contrário:
+
+   Clique com o botão direito na conexão MySQL → SQL Editor > New SQL Script
+
+   Digite e execute:
+
+        CREATE DATABASE lojavirtual;
+        USE lojavirtual;
+
+3. Importe o arquivo lojavirtual.sql
+
+    Clique com o botão direito no banco lojavirtual na árvore de bancos.
+
+    Selecione Tools > Execute Script (ou Execute SQL Script).
+
+    Selecione o arquivo lojavirtual.sql (que está na pasta do seu projeto).
+
+    Clique em Start para iniciar a importação.
+
+4. Aguarde o término da importação
+
+    O DBeaver executará os comandos do arquivo para criar tabelas e inserir dados.
+
+    Quando acabar, o banco estará pronto para uso.
+
+5. Configure seu código Python
+
+    Verifique se os dados da conexão no código Python apontam para o banco lojavirtual com host, usuário e senha corretos.
+
+    Execute o código normalmente.
+
+
+   ##Caso encontre algum erro com arquivo de importação, você pode criar tudo manualmente e você pode inserir os seus produtos.
 
 1. Instale o DBeaver:
    → Acesse [https://dbeaver.io/download/](https://dbeaver.io/download/)
@@ -120,50 +168,6 @@ Você precisa criar um banco MySQL chamado **lojavirtual** com essas tabelas:
 ou
 
 
-## Você pode usar o arquivo lojavirtual.sql para importar o banco de dados
-
-## Siga estes passos para importar no MySQL usando o DBeaver:
-
-1. Abra o DBeaver e conecte no MySQL
-
-   Abra o DBeaver.
-
-   Na lista de conexões, clique duas vezes na sua conexão MySQL (ex: localhost, root).
-
-2. Crie o banco de dados (se necessário)
-
-   Se o arquivo já cria o banco, pule esta etapa.
-
-   Caso contrário:
-
-   Clique com o botão direito na conexão MySQL → SQL Editor > New SQL Script
-
-   Digite e execute:
-
-        CREATE DATABASE lojavirtual;
-        USE lojavirtual;
-
-3. Importe o arquivo lojavirtual.sql
-
-    Clique com o botão direito no banco lojavirtual na árvore de bancos.
-
-    Selecione Tools > Execute Script (ou Execute SQL Script).
-
-    Selecione o arquivo lojavirtual.sql (que está na pasta do seu projeto).
-
-    Clique em Start para iniciar a importação.
-
-4. Aguarde o término da importação
-
-    O DBeaver executará os comandos do arquivo para criar tabelas e inserir dados.
-
-    Quando acabar, o banco estará pronto para uso.
-
-5. Configure seu código Python
-
-    Verifique se os dados da conexão no código Python apontam para o banco lojavirtual com host, usuário e senha corretos.
-
-    Execute o código normalmente.
 ---
 
 ## Instalando as bibliotecas Python necessárias
