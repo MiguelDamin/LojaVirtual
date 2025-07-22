@@ -61,7 +61,7 @@ def obter_id_produto():
 
     produto = int(entrada)
 
-    if produto not in range(1, 5):  # vai de 1 a 3
+    if produto not in range(1, 5):  # vai de 1 a 4
         print(emoji.emojize(Fore.RED + ":warning:  ATENÇÃO :warning:  --> ESCREVA O ID DE 1 A 4", language='alias'))
         continue
 
